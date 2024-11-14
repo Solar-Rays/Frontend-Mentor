@@ -29,52 +29,56 @@
 
 <body>
 
-  <!-- Sign-up form start -->
+  <div id="holder">
+    <!-- Sign-up form start -->
 
-  <main>
-    <div class="form-container">
+    <main>
+      <div class="form-container">
 
-      <img class="mobile-view" src="./assets/images/illustration-sign-up-mobile.svg" alt="sign-up image">
+        <img class="mobile-view" src="./assets/images/illustration-sign-up-mobile.svg" alt="sign-up image">
 
-      <div class="form-body">
-        <h1>Stay updated!</h1>
-        <p class="text-body">Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
-        </ul>
-        <form>
-          <label for="email" class="flex"><b> Email address</b> <span id="error" class="hide">Valid email required</span></label> <br>
-          <input type="email" id="email" name="email" placeholder="email@company.com" class="email-input " required>
-        </form>
-        <p class="btn" id="form-btn">Subscribe to monthly newsletter</p>
+        <div class="form-body">
+          <h1>Stay updated!</h1>
+          <p class="text-body">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <form>
+            <label for="email" class="flex"><b> Email address</b> <span id="error" class="hide">Valid email
+                required</span></label> <br>
+            <input type="email" id="email" name="email" placeholder="email@company.com" class="email-input " required>
+          </form>
+          <p class="btn" id="form-btn">Subscribe to monthly newsletter</p>
+        </div>
+
+        <img class="desktop-view" src="./assets/images/illustration-sign-up-desktop.svg" alt="sign-up image">
+
       </div>
 
-      <img class="desktop-view" src="./assets/images/illustration-sign-up-desktop.svg" alt="sign-up image">
+      <!-- Sign-up form end -->
 
+
+    </main>
+
+    <div id="success-popup" class="success-popup hide">
+      <div class="popup-container">
+        <img src="./assets/images/icon-success.svg" alt="success" class="popup-icon">
+        <h2>Thanks for subscribing!</h2>
+        <p class="text-body">A confirmation email has been sent to <b id="email-input"></b>. Please open it
+          and cllick the button
+          inside
+          to confirm your subscription.</p>
+        <p class="btn" id="dismiss-btn">Dismiss message</p>
+      </div>
     </div>
-
-    <!-- Sign-up form end -->
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="popup.html">Digital Cafe</a>.
     </div>
-  </main>  
-
-  <div id="success-popup" class="success-popup hide">
-    <div class="popup-container">
-      <img src="./assets/images/icon-success.svg" alt="success" class="popup-icon">
-      <h2>Thanks for subscribing!</h2>
-      <p class="text-body">A confirmation email has been sent to <b id="email-input"></b>. Please open it
-        and cllick the button
-        inside
-        to confirm your subscription.</p>
-      <p class="btn" id="dismiss-btn">Dismiss message</p>
-    </div>
   </div>
-
 </body>
 
 </html>
