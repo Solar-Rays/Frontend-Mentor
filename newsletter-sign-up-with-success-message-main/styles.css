@@ -202,27 +202,8 @@ main {
 }
 
 .form-body {
-    width: 85%;
-    padding: 2rem 2rem 2rem 4rem;
-    /* margin: auto; */
-}
-
-h1, .popup-container > h2 {
-    font-size: 4rem;
-}
-
-.text-body, ul li, input, .btn, .btn:focus {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.popup-container > .text-body {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-input, .btn, .btn:focus {
-    padding: 1.5rem;
+    width: 95%;
+    padding: 0 1.8rem;
 }
 
 .success-popup {
@@ -240,7 +221,7 @@ input, .btn, .btn:focus {
     background-color: white;
     border-radius: 0;
     padding: 2.3rem;
-    width: 90%;
+    width: 95%;
     height: 100vh;
     margin: auto auto auto 0;
     position: relative;
@@ -251,7 +232,8 @@ input, .btn, .btn:focus {
 
 #dismiss-btn {
     position: absolute;
-    bottom: 3.5rem;    
+    max-width: 90%;
+    bottom: 3rem;    
 }
 
 .desktop-view {
