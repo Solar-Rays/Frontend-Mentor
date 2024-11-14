@@ -176,19 +176,85 @@ input:focus {
 }
 
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 720px) {
 .mobile-view {
-    display: block    
+    display: block;
+    /* margin: auto; */
+    width: 100%;
+    height: auto;
+}
+
+main {
+    display: block;
+    height: fit-content;
+    width: 100vw;
+    padding: 0;
 }
 
 .form-container {
-    /* display: flex; */
+    position: absolute;
+    display: block;
+   /* height: 100vh; */   width: 100%;
+   border-radius: 0;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.form-body {
+    width: 85%;
+    padding: 2rem 2rem 2rem 4rem;
+    /* margin: auto; */
+}
+
+h1, .popup-container > h2 {
+    font-size: 4rem;
+}
+
+.text-body, ul li, input, .btn, .btn:focus {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.popup-container > .text-body {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+input, .btn, .btn:focus {
+    padding: 1.5rem;
+}
+
+.success-popup {
+    height: 100vh;
+    width: 100vw;
+    position: inherit;
+    background-color:var(--white);
+}
+
+.popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0;
+    padding: 2.3rem;
+    width: 90%;
+    height: 100vh;
+    margin: auto auto auto 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* visibility: hidden; */
+}
+
+#dismiss-btn {
+    position: absolute;
+    bottom: 3.5rem;    
 }
 
 .desktop-view {
     display: none;
 }
-
-    
 }
