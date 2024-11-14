@@ -141,7 +141,7 @@ input:focus {
 .attribution {
     position: absolute;
     margin: auto;
-    bottom: 15px;
+    bottom: 2%;
     width: 100%;
 }
 
@@ -232,7 +232,7 @@ main {
 
 #dismiss-btn {
     position: absolute;
-    max-width: 90%;
+    max-width: 88%;
     bottom: 3rem;    
 }
 
