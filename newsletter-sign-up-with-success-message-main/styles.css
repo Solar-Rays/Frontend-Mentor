@@ -70,7 +70,6 @@ main {
 
 h1 {
     font-family: roboto-bold;
-    /* text-align: center; */
     font-size: 3rem;
     color: var(--charcoal-grey);
 }
@@ -188,7 +187,6 @@ input:focus {
 @media screen and (max-width: 720px) {
     .mobile-view {
         display: block;
-        /* margin: auto; */
         width: 100%;
         height: auto;
     }
@@ -203,7 +201,6 @@ input:focus {
     .form-container {
         position: absolute;
         display: block;
-        /* height: 100vh; */
         width: 100%;
         border-radius: 0;
         flex-direction: column;
@@ -219,7 +216,7 @@ input:focus {
     .success-popup {
         height: 100vh;
         width: 100vw;
-        position: inherit;
+        position: static;
         background-color: var(--white);
     }
 
@@ -237,13 +234,20 @@ input:focus {
         position: relative;
         top: 0;
         left: 0;
-        /* visibility: hidden; */
     }
 
     #dismiss-btn {
         position: absolute;
         max-width: 88%;
         bottom: 3rem;
+    }
+
+    .attribution {
+        color: var(--charcoal-grey);
+        position: static;
+        bottom: .5rem;
+        width: 100%;
+
     }
 
     .desktop-view {
