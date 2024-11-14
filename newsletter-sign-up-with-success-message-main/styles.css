@@ -204,7 +204,7 @@ input:focus {
         width: 100%;
         border-radius: 0;
         flex-direction: column;
-        padding: 0;
+        padding: 0 0 1.5rem;
         margin: 0;
     }
 
